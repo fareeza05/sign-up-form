@@ -15,24 +15,56 @@
         <div class="image-panel">
             <p class="slogan">Where vision meets execution</p>
         </div>
+
+
         <div class="form-panel">
             <div class="sign-up-block">
                 <p class="tagline">Get Started</p>
 
+        <div class="input-container">
+            <div class="input-column">
                 <div class="input-group">
-                    <input id="firstname" type="text" name="name" placeholder="First Name" required/>
-                    <input id="lastname" type="text" name="name" placeholder="Last Name" required/>
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" type="text" name="name" required/>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-group">
-                    <input id="email" type="email" name="email" placeholder="Email" required/>
-                    <input id="phone" type="tel" name="phone" placeholder="Phone" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required/>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-group">
-                    <input id="password" type="password" name="password" placeholder="Password" required>
-                    <input id="confirm-pass" type="password" name="confirm-pass" placeholder="Confirm Password">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" required>
+                    <span class="error"></span>
                 </div>
+            </div>
+
+
+            <div class="input-column">
+                <div class="input-group">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" type="text" name="name" required/>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" name="phone" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input id="confirm-pass" type="password" name="confirm-pass" required>
+                    <span class="error"></span>
+                </div>
+            </div>
+        </div>
+
+        <button id="submit">Create Account</button>
 
             </div>  
         </div>
