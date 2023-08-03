@@ -30,4 +30,26 @@ for(let i=0; i<inputField.length ; i++){
     })
 }
 
-//
+// listening to email input field to check if valid email is given
+email.addEventListener('keyup', (e) => {
+    let msg = errorDisplay[1]
+    email.value.includes('@') && email.value.includes('.com') ? Valid(msg, '', 1) : Valid(msg, '*Please provide a valid Email', 0)
+})
+
+// listening to phone number input to check if value is correct
+num.addEventListener('keyup', (e)=> {
+    let msg = errorDisplay[4]
+    e.target.value == e.target.value.replace(/\D/g, '') ? Valid(msg, '', 1) : Valid(msg, '*Please enter valid number', 0)
+})
+
+// listening to password input to check if it matches the length requirement of 8 characters
+pass.addEventListener('keyup', (e) => {
+    let msg = errorDisplay[2]
+    pass.value.length >=8 ? Valid(msg, '', 1) : Valid(msg, '*Password must have a minimum of 8 characters', 0)
+})
+
+// listening to confirm password input to check if it matches password
+confirmation.addEventListener('keyup', (e) => {
+    let msg = errorDisplay[5]
+    pass.value === e.target.value ? Valid(msg, '', 1) : Valid(msg, '*Password did not match', 0)
+})
