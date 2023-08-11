@@ -5,7 +5,7 @@
 ---
 A website with an interface which is meant to allow users to sign up by entering their information.
 
-Live Website : https://fareeza05.github.io/calculator/
+Live Website : https://fareeza05.github.io/sign-up-form/
 
 ## Features
 ---
